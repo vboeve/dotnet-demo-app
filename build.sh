@@ -1,6 +1,7 @@
 #!/bin/bash
 set -euo pipefail
-
+docker rm -f todoapp
+docker rm -f todoappdb
 
 docker pull mariadb:11
 docker volume create mariadb-data
